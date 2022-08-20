@@ -1,0 +1,35 @@
+global:
+    memo: Veronika#3278
+default_chain: gaia
+chains:
+  gaia:
+    key: GAIA_REL_WALLET
+    chain-id: GAIA
+    rpc-addr: http://5.9.147.22:26257
+    grpc-addr: http://5.9.147.22:9082
+    account-prefix: cosmos
+    keyring-backend: test
+    gas-adjustment: 1.2
+    gas-prices: 0.01uatom
+    key-directory: /root/.icq/keys
+    debug: true
+    timeout: 20s
+    block-timeout: ""
+    output-format: json
+    sign-mode: direct
+  stride:
+    key: wallet
+    chain-id: STRIDE-TESTNET-2
+    rpc-addr: http://127.0.0.1:36657
+    grpc-addr: http://127.0.0.1:9094
+    account-prefix: stride
+    keyring-backend: test
+    gas-adjustment: 1.2
+    gas-prices: 0.01ustrd
+    key-directory: /root/.icq/keys
+    debug: true
+    timeout: 20s
+    block-timeout: ""
+    output-format: json
+    sign-mode: direct
+cl: {}
